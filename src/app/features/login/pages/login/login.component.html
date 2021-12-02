@@ -1,0 +1,16 @@
+<app-header></app-header>
+<main>
+    <div class="login-container">
+    <h2>Login</h2>
+    <p>Bem vindo! <br />Digite seu usuário/senha para acessar o sistema!</p>
+    <form action="submit" (submit)="authenticate()">
+        <label for="email">E-mail</label>
+            <input [(ngModel)]="email" type="email" placeholder="Digite o seu email" name="email" required />        
+        <label for="password">Senha</label>
+            <input [(ngModel)]="password" type="password" placeholder="Digite a sua senha" name="password" required />        
+        <p class="error" *ngIf="error">E-mail ou senha incorretos, tente novamente.</p>
+        <button [disabled]="!email || !password">Login</button>
+    </form>
+    </div>
+</main>
+<app-footer></app-footer>

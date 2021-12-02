@@ -1,0 +1,29 @@
+<div class="card" *ngIf="member && card">
+    <img [src]="member?.memberImg" />
+    <ul>
+        <li><h4>{{ member?.name }}</h4></li>
+        <li>Plano: {{ member?.membership }}</li>
+        <li>Valor a pagar: {{ member?.monthlyFee | currency: 'BRL' }}</li>
+        <li>Data último pagamento: {{ member?.lastPayment | date: 'longDate' }}</li>
+    </ul>
+    <button (click)="navigateToDetails()">+ Detalhes</button>
+    <div class="vertical-divisor"></div>
+    <button (click)="remove(member.id)">- Excluir</button>
+</div>
+ 
+<div class="member-details" *ngIf="member && !card">
+    <img [src]="member?.memberImg" />
+    <ul>
+        <li><h1>{{ member?.name }}</h1></li>
+        <li>E-mail: {{ member?.email }}</li>
+        <li>Plano: {{ member?.membership }}</li>
+        <li>Programas: {{member?.memberprograms}}</li>
+        <li>Tratamento Desejado: {{member?.membertratament}}</li>
+        <li>Mensalidade: {{ member?.monthlyFee | currency: 'BRL' }}</li>
+        <li>Data último pagamento: {{ member?.lastPayment | date: 'longDate' }}</li>
+        <li>Data de adesão: {{ member?.startDate | date: 'longDate' }}</li>
+        <li *ngIf="member?.validRegistration">Registro: Válido</li>
+        <li *ngIf="!member?.validRegistration">Registro: Inválido</li>
+    </ul>
+</div>
+

@@ -1,0 +1,53 @@
+main {
+    min-height: 488px;
+    margin-left: 88px;
+    padding-top: 48px;
+
+    background-image: url('../../../../../assets/img/imagem3.jpeg');
+    background-size: cover;
+
+    .cadastro-container{
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        background-color: rgb(58, 54, 54);
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 0 pink;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    h2{
+        color: rgb(243, 105, 128);
+    }
+
+    form {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+       
+    
+        input, select {
+            margin-bottom: 16px;
+
+            &:disabled {
+                background-color: #CCC;
+            }
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        button {
+            margin-top: 24px;
+            margin-block-end: 15px;
+        }
+    }
+
+}

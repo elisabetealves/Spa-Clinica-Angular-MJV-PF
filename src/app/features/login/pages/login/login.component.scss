@@ -1,0 +1,53 @@
+main {
+    width: 100%;
+    min-height: 648px;
+    min-height: 588px;
+    background-image: url('../../../../../assets/img/imagem2.jpeg');
+    background-size: cover;
+    background-position: 0px -144px;
+    padding-left: 88px;
+    
+     
+    div{
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        background-color: rgb(48, 46, 46);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 0 pink;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    h2{
+        //margin-top: 24px;
+        color: rgb(243, 105, 128);
+    }
+
+    form {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+       
+        input {
+            margin-bottom: 16px;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        button {
+            margin-top: 12px;
+            margin-block-end: 15px;
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+@import '../../../../../assets/styles/colors';
+
+main {
+    width: 100%;
+    min-height: 648px;
+    
+    background-image: url('../../../../../assets/img/imagem1.jpg');
+    background-size: cover;
+    height: 100%;
+    padding-left: 88px;
+    
+
+    h1 {
+        font-size: 56px;
+        margin: 0;
+        color: rgb(247, 53, 85);
+        padding-top: 136px;
+        text-transform: uppercase;
+    }
+
+    button {
+        margin-top: 32px;
+        font-size: 20px;
+    }
+}

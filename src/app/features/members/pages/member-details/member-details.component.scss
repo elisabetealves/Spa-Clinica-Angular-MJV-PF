@@ -1,0 +1,29 @@
+@import '../../../../../assets/styles/colors';
+
+main {
+    width: 100%;
+    min-width: 948px;
+    min-height: 548px;
+    width: 768px;
+    padding: 16px;
+    margin-left: 88px;
+    margin-right: 78px;
+    background-color: $primary;
+    color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    background-color: rgb(48, 46, 46);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 pink;
+    padding-top: 25px;
+    
+    h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: rgb(243, 105, 128);
+        text-align: center;
+    }
+
+    
+}

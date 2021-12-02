@@ -1,0 +1,56 @@
+<app-header></app-header>
+<main>
+    <div class="aliantento">
+    <div class="cadastro-container">
+    <h2>Formulário de Cadastro</h2>
+    <p>Para se cadastrar preencha os campos abaixos.</p>
+    <form #memberForm="ngForm" action="submit" (submit)="submit(memberForm)">
+        <label for="name">Nome</label>
+        <input ngModel type="text" placeholder="Digite o seu nome completo" name="name" required />
+        <label for="email">E-mail</label>
+        <input ngModel type="email" placeholder="Digite o seu email" name="email" required />
+        <label for="password">Senha</label>
+        <input ngModel type="password" placeholder="Digite a sua senha" name="password" required />
+        <label for="membership">Plano</label>
+        <select ngModel name="membership" required>
+            <option value="Basic">Basic</option>
+            <option value="Ultimate">Ultimate</option>
+            <option value="VIP">VIP</option>
+            <option value="Premium">Premium</option>
+        </select>
+        <label for="memberprograms">Programas</label>
+        <select ngModel name="memberprograms" required>
+            <option value="Basic">Saúde Mental</option>
+            <option value="Basic">Obsidade</option>
+            <option value="Premium">Reabilitação</option>
+            <option value="Premium">Clínico</option>
+            <option value="VIP">Detox</option>
+            <option value="Ultimate">Programa Fitness</option>
+            <option value="Premium">Vida Natural</option>
+            <option value="VIP">Day SPA</option>
+            <option value="Basic">Outros</option>
+        </select>
+        <label for="membertratament">Tratamento Desejado</label>
+        <select ngModel name="membertratament" required>
+            <option value="Basic">Hidroterapia</option>
+            <option value="Ultimate">Geoterapia</option>
+            <option value="Premium">Fisioterapia</option>
+            <option value="Premium">Massagemterapia</option>
+            <option value="Basic">Estética</option>
+            <option value="Ultimate">Massagem Linfática</option>
+            <option value="VIP">Massagem Modeladora</option>
+            <option value="VIP">Reeducação Alimentar</option>
+            <option value="Basic">Outros</option>
+        </select>
+        <label for="monthlyFee">Valor a pagar</label>
+        <input ngModel type="number" name="monthlyFee" required />
+        <label for="lastPayment">Último pagamento de mensalidade</label>
+        <input type="text" name="lastPayment" [(ngModel)]="member.lastPayment" disabled />
+        <label for="date">Data de início</label>
+        <input type="text" name="startDate" [(ngModel)]="member.startDate" disabled />
+        <button type="submit" [disabled]="memberForm.invalid">Registrar</button>
+    </form>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>

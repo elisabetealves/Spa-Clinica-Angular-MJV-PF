@@ -1,0 +1,46 @@
+@import '../../../assets/styles/colors';
+
+nav {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 104px;
+        height: 48px;
+        margin-left: 88px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+    
+        li {
+            margin: 0 16px;
+            padding: 16px 24px;            
+            //text-transform: uppercase;
+            cursor: pointer;
+            &:after {
+                display:block;
+                content: '';
+                border-bottom: solid 2px $primary;  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+              }
+
+            &:hover:after {
+                transform: scaleX(1);
+            }
+        }
+
+        .register {
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+
+    .member-menu {
+        margin-left: 100px;
+    }
+}

@@ -1,0 +1,48 @@
+main {
+    min-height: 488px;
+    padding-left: 88px;
+    padding-top: 48px;
+    background-image: url('../../../../../assets/img/imagem4.jpeg');
+    background-size: 50%;
+    background-position: 748px -124px;
+    background-repeat: no-repeat;
+
+   div {
+        width: 804px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        background-color: rgb(58, 54, 54);
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 0 pink;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2{
+        text-align: center;
+        color: rgb(243, 105, 128);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 16px 0;
+        }
+    }
+    
+    input {
+        width: 456px;
+        margin: 0 16px 0 16px;
+        margin-block-end: 20px;
+    }
+
+    select {
+        padding: 4px;
+    }
+}

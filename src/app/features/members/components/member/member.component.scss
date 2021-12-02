@@ -1,0 +1,73 @@
+@import '../../../../../assets/styles/colors';
+
+.card {
+    width: 768px;
+    padding: 16px;
+    background-color: $primary;
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 80px;
+        display: inline-block;
+        border: 2px solid $secondary;
+        border-radius: 4px;
+    }
+
+    ul {
+        display: inline-block;
+        list-style: none;
+        margin: 8px;
+        padding: 0;
+        width: 496px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+    }
+
+
+    button {
+        padding: 8px 24px;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px 0 pink;
+        cursor: pointer;
+    }
+
+    .vertical-divisor {
+        width: 8px;
+    }
+}
+
+.member-details {
+    width: 768px;
+    padding: 16px;
+    margin-left: 88px;
+    background-color: $primary;
+    color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 pink;
+    padding: 16px;
+       
+    img {
+        width: 240px;
+        border: 2px solid $secondary;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 472px;
+    }
+
+    h1 {
+        margin: 0 0 16px 0;
+    }
+}
