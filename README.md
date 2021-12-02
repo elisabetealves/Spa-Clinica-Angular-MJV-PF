@@ -1,4 +1,4 @@
-# Spa-Clinica-Angular-MJV-PF
+# Spa e Clínica Flor de Lótus
 Projeto final para a conclusão do curso de Angular e Node realizado pela MJV School.
 
 # SpaClinicaAngularMJVPF
