@@ -1,5 +1,14 @@
 # Spa e Clínica Flor de Lótus
+
 Projeto final para a conclusão do curso de Angular e Node realizado pela MJV School.
+
+# Layout
+
+<img src="./img/clinica.png">
+<img src="./img/clinica1.png">
+<img src="./img/clinica2.png">
+<img src="./img/clinica3.png">
+<img src="./img/clinica4.png">
 
 # SpaClinicaAngularMJVPF
 
